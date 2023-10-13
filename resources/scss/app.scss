@@ -3,3 +3,14 @@
 .debug {
     background-color: rgba(255, 0, 0, 0.3);
 }
+
+header {
+    text-align: center;
+    .blue-bg {
+        background-color: blue;
+        height: 10vh;
+        line-height: 10vh;
+
+        color: aliceblue;
+    }
+}
