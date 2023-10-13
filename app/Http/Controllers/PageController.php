@@ -17,5 +17,15 @@ class PageController extends Controller
 
         return view('welcome', compact('movies'));
     }
-    //
+
+    public function detail($id)
+    {
+
+        $movieDET = Movie::where('id', '=', $id)->first();
+        // $movies = Movie::findorfail($id);
+
+
+        return view('movieDetail', compact('movieDET'));
+    }
+
 }
